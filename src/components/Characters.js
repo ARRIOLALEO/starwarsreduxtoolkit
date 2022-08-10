@@ -5,7 +5,7 @@ import { Loading } from './Loading';
 export const Characters = () => {
   const characters = useSelector((state) => state.characters.data);
   const loading = useSelector((state) => state.characters.loading);
-
+  console.log(characters);
   return (
     <section className="Characters">
       {loading && <Loading />}
